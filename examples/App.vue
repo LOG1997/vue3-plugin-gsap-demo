@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { GsapNumber } from "../packages";
+// import { GsapNumber } from "../packages";
+import { GsapNumber } from "../lib/vue3-plugin-gsap-demo.es.ts";
 </script>
 
 <template>
@@ -18,6 +19,6 @@ import { GsapNumber } from "../packages";
 }
 .gsapNUmber {
   font-size: 40px;
-  /* color: blueviolet; */
+  color: blueviolet;
 }
 </style>

@@ -1,10 +1,19 @@
-# Vue 3 + TypeScript + Vite
+<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/log1997/vue3-plugin-gsap-demo">
+<img alt="vue" src="https://img.shields.io/badge/vue-3.x-blue">
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/vue3-plugin-gsap-demo?label=minzip">
+<img alt="License" src="https://img.shields.io/npm/l/vue3-plugin-gsap-demo">
+# Vue 3 + GSAP 数字
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+使用vue3 + GSAP动画库搭建的vue3组件
 
-## Recommended IDE Setup
+## 安装
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```
+npm i vue3-plugin-gsap-demo
+```
+## 使用
+在需要使用到的文件中引入
+
 
 ## Type Support For `.vue` Imports in TS
 

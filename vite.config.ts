@@ -9,7 +9,8 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "packages/index.ts"), //指定组件编译入口文件
       name: "Vue3PluginGsapDemo",
-      fileName: "vue3-plugin-gsap-demo",
+      fileName: (format) => `vue3-plugin-gsap-demo.${format}.ts`,
+      // fileName: "vue3-plugin-gsap-demo",
     }, //库编译模式配置
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

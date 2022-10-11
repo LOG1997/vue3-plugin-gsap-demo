@@ -5,7 +5,7 @@ export { GsapNumber };
 
 const components = [GsapNumber];
 
-const install = (App) => {
+const install = (App: any) => {
   components.forEach((item) => {
     App.component(item.__name, item);
   });
@@ -13,4 +13,5 @@ const install = (App) => {
 
 export default {
   install,
+  GsapNumber,
 };

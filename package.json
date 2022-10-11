@@ -2,36 +2,44 @@
   "name": "vue3-plugin-gsap-demo",
   "private": false,
   "version": "0.0.2",
+  "license": "MIT",
+  "description": "Vue3 + GSAP number growth animation",
   "keywords": [
     "gsap",
     "animate"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOG1997/vue3-plugin-gsap-demo.git"
+  },
+  "homepage": "https://github.com/LOG1997/vue3-plugin-gsap-demo#readme",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "files": [
     "lib"
   ],
-  "main": "lib/vue3-plugin-gsap-demo.umd.js",
-  "module": "lib/vue3-plugin-gsap-demo.es.js",
+  "main": "lib/vue3-plugin-gsap-demo.umd.ts",
+  "module": "lib/vue3-plugin-gsap-demo.es.ts",
   "exports": {
     "./lib/style.css": "./lib/style.css",
     ".": {
-      "import": "./lib/vue3-plugin-gsap-demo.es.js",
-      "require": "./lib/vue3-plugin-gsap-demo.umd.js"
+      "import": "./lib/vue3-plugin-gsap-demo.es.ts",
+      "require": "./lib/vue3-plugin-gsap-demo.umd.ts"
     }
   },
   "dependencies": {
     "gsap": "^3.11.3",
     "path": "^0.12.7",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue3-plugin-gsap-demo": "^0.0.2"
   },
   "devDependencies": {
     "@types/node": "^18.8.3",
     "@vitejs/plugin-vue": "^2.3.4",
-    "typescript": "^4.5.4",
+    "typescript": "^4.8.4",
     "vite": "^2.9.15",
     "vue-tsc": "^0.34.7"
   }

@@ -3894,6 +3894,7 @@ _forEachName("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,p
 gsap.registerPlugin(CSSPlugin);
 var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 gsapWithCSS.core.Tween;
+const _hoisted_1 = { class: "gsapNumber" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "GsapNumber",
   props: {
@@ -3908,6 +3909,10 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     duration: {
       type: Number,
       default: 3
+    },
+    colorTheme: {
+      type: Object,
+      default: {}
     }
   },
   setup(__props) {
@@ -3919,9 +3924,10 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         duration: props.duration,
         showNumber: props.endNumber
       });
+      console.log("gggasasp");
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("span", null, toDisplayString(unref(showNumber).toFixed(0)), 1);
+      return openBlock(), createElementBlock("span", _hoisted_1, toDisplayString(unref(showNumber).toFixed(0)), 1);
     };
   }
 });
